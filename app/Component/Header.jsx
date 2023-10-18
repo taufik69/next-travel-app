@@ -12,12 +12,14 @@ const Header = () => {
     window.addEventListener("resize", function (e) {
       if (e.target.innerWidth < 1024) {
         setshow(false);
+      } else {
+        setshow(true);
       }
     });
-  });
+  }, []);
 
   const HandleChangeMenu = () => {
-    // setshow(!show);
+    setshow(!show);
     console.log("clicked");
   };
 
@@ -32,7 +34,7 @@ const Header = () => {
           </div>
 
           {show && (
-            <ul className="gap-x-5 lg:flex">
+            <ul className="lg:gap-x-5  lg:flex bg-green-500 py-5 w-full text-center text-white top-12 left-0  absolute lg:text-black lg:bg-transparent lg:justify-center lg:top-4">
               <li className="hover:text-green-300 ease-in duration-200">
                 <Link href={"/home"}> Home </Link>
               </li>
