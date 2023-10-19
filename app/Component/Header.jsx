@@ -10,17 +10,16 @@ const Header = () => {
   const [show, setshow] = useState(true);
   useEffect(() => {
     window.addEventListener("resize", function (e) {
-      if (e.target.innerWidth < 1024) {
-        setshow(false);
-      } else {
+      if (e.target.innerWidth > 1024) {
         setshow(true);
+      } else {
+        setshow(false);
       }
     });
   }, []);
 
   const HandleChangeMenu = () => {
     setshow(!show);
-    console.log("clicked");
   };
 
   return (
@@ -34,7 +33,7 @@ const Header = () => {
           </div>
 
           {show && (
-            <ul className="lg:gap-x-5  lg:flex bg-green-500 py-5 w-full text-center text-white top-12 left-0  absolute lg:text-black lg:bg-transparent lg:justify-center lg:top-4">
+            <ul className="lg:gap-x-5  lg:flex bg-gray-500 py-5 w-full text-center text-white top-12 left-0  absolute lg:text-black lg:bg-transparent lg:justify-center lg:top-4">
               <li className="hover:text-green-300 ease-in duration-200">
                 <Link href={"/home"}> Home </Link>
               </li>
