@@ -33,7 +33,7 @@ const Header = () => {
           </div>
 
           {show && (
-            <ul className="lg:gap-x-5  lg:flex bg-gray-500 py-5 w-full text-center text-white top-12 left-0  absolute lg:text-black lg:bg-transparent lg:justify-center lg:top-4">
+            <ul className="lg:gap-x-5 font-inter lg:flex bg-gray-500 py-5 w-full text-center text-white top-12 left-0  absolute lg:text-black lg:bg-transparent lg:justify-center lg:top-4">
               <li className="hover:text-green-300 ease-in duration-200">
                 <Link href={"/home"}> Home </Link>
               </li>
@@ -58,7 +58,7 @@ const Header = () => {
 
           <Button
             className={
-              "px-10 lg:flex gap-x-3 items-center py-3 rounded-3xl bg-gray-900 text-white hidden"
+              "px-10 lg:flex gap-x-3 font-inter items-center py-3 rounded-3xl bg-gray-900 text-white hidden"
             }
           >
             <FiUsers className="text-white text-xl" /> Login

@@ -1,5 +1,15 @@
-import Image from "next/image";
+import Banner from "./Component/Banner";
 
+export const Metadata = {
+  title: "Taufik",
+  description: "...",
+};
 export default function Home() {
-  return <h1>hello world </h1>;
+  return (
+    <>
+      <div className="pt-10 pb-10">
+        <Banner />
+      </div>
+    </>
+  );
 }
