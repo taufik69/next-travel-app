@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./CommonComponent/Button";
 
 export const Metadata = {
   title: "Taufik",
@@ -69,16 +70,41 @@ const Banner = () => {
                 </p>
               </div>
             </div>
+            <div>
+              <Button className="p-5 bg-[#30AF5B] font-inter ">
+                Download app
+              </Button>
+            </div>
           </div>
 
-          <div className="sm:w-1/2 flex justify-center items-center flex-col">
+          <div className="sm:w-1/2 flex justify-center md:justify-between items-center flex-col relative">
             <Image
               src={"/pattern.png"}
               alt="pattern.png"
               width={500}
               height={500}
-              className=""
             />
+            <div className="w-full mt-20 sm:mt-0 md:w-1/2 lg:w-1/3 rounded-2xl h-auto bg-black p-5  absolute lg:right-[256px] lg:top-[108px] md:right-[189px] sm:top-[100px]">
+              <div className="flex font-inter   text-gray-300 justify-between">
+                <h3 className="text-lg font-normal ">Location</h3>
+                <span>X</span>
+              </div>
+              <h2 className="text-xl font-bold text-gray-300 font-inter ">
+                Aguas Calientes
+              </h2>
+
+              <div className="flex text-gray-300 justify-between mt-9">
+                <div className="font-inter">
+                  <h2>Distance</h2>
+                  <p className="font-bold text-xl">173.28 mi</p>
+                </div>
+
+                <div>
+                  <h2>Elevation</h2>
+                  <p className="font-bold text-xl">2.040 km</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
