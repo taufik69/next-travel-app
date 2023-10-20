@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./CommonComponent/Button";
+import { GoPlay } from "react-icons/go";
 
 export const Metadata = {
   title: "Taufik",
@@ -71,7 +72,12 @@ const Banner = () => {
               </div>
             </div>
             <div>
-              <Button className="p-5 bg-[#30AF5B] font-inter ">
+              <Button className="p-5 bg-[#30AF5B] font-inter rounded-[30px] mt-5 text-white font-bold  ">
+                Download app
+              </Button>
+
+              <Button className=" font-inter ml-6 text-md font-bold">
+                <GoPlay className="inline-block text-green-700 text-xl mr-1" />{" "}
                 Download app
               </Button>
             </div>
