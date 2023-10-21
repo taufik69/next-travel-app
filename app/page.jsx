@@ -1,4 +1,5 @@
 import Banner from "./Component/Banner";
+import Camp from "./Component/Camp";
 
 export const Metadata = {
   title: "Taufik",
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <div className="pt-10 pb-10">
         <Banner />
+        <Camp />
       </div>
     </>
   );
