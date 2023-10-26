@@ -14,14 +14,57 @@ const Camp = () => {
               height={300}
               className="rounded-2xl"
             />
-            <div className="bg-[#30AF5B] absolute top-0 left-0 w-[80px] h-[80px] rounded-full">
+            <div className="flex absolute top-5 left-5 gap-3  ">
               <Image
                 src={"/map.svg"}
-                alt="map.svg"
-                width={50}
-                height={50}
-                className="m-auto mt-[20%]"
+                alt="camp.png"
+                width={10}
+                height={10}
+                className="p-2 rounded-full bg-[#30AF5B] w-[55px] h-[55px]"
               />
+              <div className="font-inter text-white">
+                <h1 className="font-semibold text-base ">Putuk Truno Camp</h1>
+                <p className="font-normal text-sm">Prigen, Pasuruan</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-x-3 absolute bottom-6 left-5">
+              <div className="flex -space-x-4 items-center">
+                <Image
+                  src={"/person-1.png"}
+                  alt="camp.png"
+                  width={150}
+                  height={150}
+                  className=" rounded-full w-[50px] h-[50px]"
+                />
+
+                <Image
+                  src={"/person-1.png"}
+                  alt="camp.png"
+                  width={100}
+                  height={100}
+                  className=" rounded-full w-[55px] h-[55px]"
+                />
+
+                <Image
+                  src={"/person-1.png"}
+                  alt="camp.png"
+                  width={100}
+                  height={100}
+                  className=" rounded-full w-[55px] h-[55px]"
+                />
+
+                <Image
+                  src={"/person-1.png"}
+                  alt="camp.png"
+                  width={100}
+                  height={100}
+                  className=" rounded-full w-[55px] h-[55px]"
+                />
+              </div>
+              <div className="font-inter text-xm font-bold">
+                <h1>50+ Joined</h1>
+              </div>
             </div>
           </div>
         </div>
